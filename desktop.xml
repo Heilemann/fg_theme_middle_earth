@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+  <!-- Override CoreRPG ruleset graphics -->
+
+  <!-- Desktop background -->
+  <framedef name="desktop">
+		<bitmap file="graphics/frames/desktop-wood.jpg" />
+		<middle rect="0,0,850,850" />
+	</framedef>
+
+  <!-- rock face -->
+  <!-- <framedef name="desktop">
+		<bitmap file="graphics/frames/desktop-stone1.jpg" />
+		<middle rect="0,0,1000,1000" />
+	</framedef> -->
+
+  <!-- light stone -->
+  <!-- <framedef name="desktop">
+		<bitmap file="graphics/frames/desktop-stone2.jpg" />
+		<middle rect="0,0,1000,1000" />
+	</framedef> -->
+
+  <!-- same, but dark -->
+  <!-- <framedef name="desktop">
+		<bitmap file="graphics/frames/desktop-stone3.jpg" />
+		<middle rect="0,0,1000,1000" />
+	</framedef> -->
+
+  <!-- <framedef name="shortcuts">
+    <bitmap file="graphics/frames/desktop-wood.jpg" />
+		<middle rect="0,0,850,850" />
+	</framedef> -->
+
+  <!-- Create a new shadow  -->
+  <framedef name="innershadow">
+		<bitmap file="graphics/frames/desktop-shadow.png" />
+		<offset>256,256,256,256</offset>
+	</framedef>
+
+  <windowclass name="innershadow">
+    <frame>innershadow</frame>
+  </windowclass>
+
+  <panel name="innershadow" modes="all">
+    <class>innershadow</class>
+    <disabled/>
+    <bounds>
+      <anchored>
+        <left offset="0" />
+        <top offset="0" />
+        <right parent="shortcuts" anchor="left" />
+        <bottom offset="-34" />
+      </anchored>
+    </bounds>
+  </panel>
+
+
+  <!-- chat (do not allow unlock and resize) -->
+  <panel name="chat" modes="host, client, local">
+    <class>chat</class>
+    <bounds>5,90,390,-130</bounds>
+    <locked />
+  </panel>
+
+  <panel name="identitylist" modes="host">
+		<class>identitylist</class>
+		<anchored height="20">
+			<left parent="chat" />
+			<top parent="chat" anchor="bottom" offset="2" />
+			<right parent="shortcutsanchor" anchor="left" />
+		</anchored>
+	</panel>
+
+  <panel name="modifierstack" modes="host,client">
+		<class>modifierstack</class>
+		<bounds>5,-100,64,57</bounds>
+		<dynamic />
+		<locked />
+	</panel>
+
+  <panel name="Die" modes="host,client,local">
+		<class>RMDice</class>
+		<bounds>
+			<anchored>
+				<bottom>
+					<anchor>bottom</anchor>
+					<offset>-25</offset>
+				</bottom>
+				<left>
+					<anchor>left</anchor>
+					<offset>65</offset>
+				</left>
+				<size>
+					<height>80</height>
+					<width>340</width>
+				</size>
+			</anchored>
+		</bounds>
+		<dynamic />
+		<locked />
+	</panel>
+
+</root>

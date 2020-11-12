@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+  <script name="BESessionDecals">
+  function onInit()
+    OptionsManager.addOptionValue("DDCL","option_val_DDCL_ringpoem","desktopdecal_ringpoem",true)
+    OptionsManager.addOptionValue("DDCL","option_val_DDCL_ringpoem-and-ring","desktopdecal_ringpoem-and-ring",true)
+    OptionsManager.addOptionValue("DDCL","option_val_DDCL_merp-logo","desktopdecal_merp-logo",true)
+    OptionsManager.addOptionValue("DDCL","option_val_DDCL_iron-crown","desktopdecal_iron-crown",true)
+  end
+  </script>
+
+  <string name="option_val_DDCL_ringpoem">Ring Poem</string>
+  <icon name="desktopdecal_ringpoem" file="graphics/decals/decal-ringpoem.png" />
+
+  <string name="option_val_DDCL_ringpoem-and-ring">Poem and Ring</string>
+  <icon name="desktopdecal_ringpoem-and-ring" file="graphics/decals/decal-ringpoem-and-ring.png" />
+
+  <string name="option_val_DDCL_merp-logo">MERP 2e</string>
+  <icon name="desktopdecal_merp-logo" file="graphics/decals/decal-merp-logo.png" />
+
+  <string name="option_val_DDCL_iron-crown">The Iron Crown</string>
+  <icon name="desktopdecal_iron-crown" file="graphics/decals/decal-iron-crown.png" />
+</root>

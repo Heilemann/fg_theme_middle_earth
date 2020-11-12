@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+<root logo="logo.png">
+  <announcement text="Middle-earth Theme v1.0 beta for Rolemaster Classic v2.0 ruleset for Fantasy Grounds" icon="bagend-logo" font="emotefont" />
+
+  <properties>
+    <name>Theme - Middle-earth</name>
+    <version>1.0</version>
+    <author>Michael Heilemann</author>
+    <description>A simple Middle-earth theme for the Rolemaster Classic v2.0 ruleset for Fantasy Grounds.</description>
+    <loadorder>99</loadorder>
+    <ruleset>
+      <name>RolemasterClassic</name>
+      <minrelease>2</minrelease>
+    </ruleset>
+  </properties>
+
+  <base>
+    <icon name="bagend-logo" file="graphics/bagend-logo.png" />
+
+    <icon name="portrait_gm_token" file="graphics/portraits/the-one-ring-logo.png" />
+    <!-- <icon name="portrait_gm_token" file="graphics/portraits/portrait_gm_token.png" /> -->
+
+    <includefile source="decal.xml" />
+    <includefile source="desktop.xml" />
+  </base>
+</root>
