@@ -1,19 +1,18 @@
 ﻿<?xml version="1.0" encoding="ISO-8859-1"?>
 
-
 <root logo="logo.png">
-  <announcement text="Middle-earth Theme v1.0 beta for Rolemaster Classic v2 ruleset for Fantasy Grounds" icon="bagend-logo" font="emotefont" />
+  <announcement text="Middle-earth Theme v1.0 for Fantasy Grounds" icon="bagend-logo" font="emotefont" />
 
   <properties>
     <name>Theme - Middle-earth</name>
     <version>1.0</version>
     <author>Michael Heilemann</author>
-    <description>A simple Middle-earth theme for the Rolemaster Classic v2 ruleset for Fantasy Grounds. It replaces the background with a wooden texture and provides a few extra Lord of the Rings decals.</description>
+    <description>A simple Middle-earth theme for Fantasy Grounds. It replaces the background with a wooden texture and provides a few extra Lord of the Rings decals (found in settings).</description>
     <loadorder>99</loadorder>
-    <ruleset>
+    <!-- <ruleset>
       <name>RolemasterClassic</name>
       <minrelease>2</minrelease>
-    </ruleset>
+    </ruleset> -->
   </properties>
 
   <base>
